@@ -26,3 +26,10 @@
 - El PO no sabe qué responde hoy el sistema ante ese conflicto.
 - Requisito de negocio: **la vista no puede mentir**. Si una transacción ya no está en el estado
   que el operador cree, o la acción falló, tiene que enterarse claramente.
+
+## Performance y equipos
+
+- No hay una métrica fija; las quejas: se congela al filtrar y **se vuelve lenta tras horas de uso**
+  (síntoma de fuga de memoria o de datos que se acumulan).
+- Laptops corporativas con **4 GB de RAM**.
+- Chromium de versión fija, cerrado por política: no se puede pedir otro navegador.
