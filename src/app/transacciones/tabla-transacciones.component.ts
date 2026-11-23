@@ -13,7 +13,6 @@ import { EstadoTransaccion } from './transaccion.model';
   standalone: true,
   imports: [ScrollingModule, CurrencyPipe, DatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [TransaccionesStore],
   template: `
     <div class="acciones">
       <span>{{ store.cantidadSeleccionada() }} seleccionadas (máx. 500)</span>
