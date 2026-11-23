@@ -84,7 +84,7 @@ resultado por fila y el resumen del lote.
 |---|---|---|
 | Unitario puro | `filtrar`: combinación de filtros y rangos | `filtrar.spec.ts` |
 | Unitario del store (API falsa) | cursor, tope de memoria, reinicio al cambiar filtros, tope de 500, lote parcial, lote en proceso, error al consultar el lote | `transacciones.store.spec.ts` |
-| Componentes | la fila pendiente no se puede volver a seleccionar; la fila fallida muestra el motivo | propuesto |
+| Componentes | la fila pendiente no se puede volver a seleccionar; la fila fallida muestra el motivo | `tabla-transacciones.component.spec.ts` |
 | Contrato | respuestas reales del endpoint de lotes (éxito, parcial, rollback total) contra el modelo `EstadoLote` | propuesto, cuando backend confirme el formato |
 | E2E (Playwright en el Chromium corporativo) | filtrar y editar 500 filas sin congelar la UI | propuesto |
 | Performance / memoria | sesión simulada de varias horas: heap estable (Chrome DevTools / `performance.memory`) y tiempo de respuesta del filtro | propuesto |
