@@ -19,3 +19,10 @@
 - El endpoint es **asíncrono**: devuelve un `task_id` y el estado se consulta aparte.
 - El PO no sabe si el backend informa qué ítems fallaron o si hace rollback total: **duda abierta**.
 - Hoy los fallos son silenciosos y la vista queda desincronizada: el operador no sabe si terminó.
+
+## Concurrencia
+
+- Más de 1.500 operadores usan la herramienta al mismo tiempo: dos pueden tocar lo mismo.
+- El PO no sabe qué responde hoy el sistema ante ese conflicto.
+- Requisito de negocio: **la vista no puede mentir**. Si una transacción ya no está en el estado
+  que el operador cree, o la acción falló, tiene que enterarse claramente.
